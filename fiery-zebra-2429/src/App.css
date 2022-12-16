@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* ========== Footer Styling ============= */
+
+.footerContainer{
+  background-color: rgb(255, 226, 231);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+  width:90%;
+  margin:auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.footerUpperContainer{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.infoMenu{
+  color: rgb(34, 34, 34);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infoMenu:hover{
+  color: rgb(66, 66, 66);
+}
+
+
+/* ================= COMPONENTS ================ */
+
+/* *********** buttons *************/
+
+.ghostBtn{
+  border-radius: 50px;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.solidBtn:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/* ********** SOCIAL ICONS ************ */
+
+.socialIcons:hover{
+  color: rgb(63, 63, 63);
 }

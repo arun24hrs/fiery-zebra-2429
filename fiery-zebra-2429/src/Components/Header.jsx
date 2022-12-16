@@ -1,9 +1,10 @@
 import { background, Box, Image, position } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons"
+import styles from './Header.module.css'
 
 export const Header = () => {
     return(
-        <Box width="90%" margin="auto" bg="lightpink">
+        <Box className={styles.headerContainer}>
             <Box
             style={{
               border: "1px solid lightGrey",
@@ -12,10 +13,10 @@ export const Header = () => {
               alignItems: "center",
               borderRadius: "50px",
               width: "780px",
-              position: "absolute",
               backgroundColor: "white",
-              left: "20%",
-              top: "52%"
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%, -50%)"
             }}
           >
             <SearchIcon />
@@ -24,7 +25,6 @@ export const Header = () => {
               style={{ fontSize: "20px", width: "600px", marginLeft: "5px" }}
             />
           </Box>
-            <Image src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans@2x.webp"/>
         </Box>
     )
 }

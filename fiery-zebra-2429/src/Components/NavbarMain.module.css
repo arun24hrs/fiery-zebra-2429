@@ -1,3 +1,27 @@
-button:hover {
-    background-color: orange;
+.container {
+  border: 1px solid lightgrey;
+  height: 60px;
+  padding: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
 }
+.logoHolder {
+  width: 200px;
+  margin-right: 50px;
+}
+
+.searchBox {
+  border: 1px solid lightGrey;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.inputBox {
+  font-size: 18px;
+  width: 300px;
+  margin-left: 5px;
+}
+
