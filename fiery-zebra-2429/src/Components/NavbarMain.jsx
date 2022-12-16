@@ -1,57 +1,38 @@
-import { Box, Image, Flex, Button } from "@chakra-ui/react";
+import { Box, Image, Flex, Button, HStack } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import {SlPencil} from "react-icons/sl"
 import { FiHeart } from "react-icons/fi"
 import {BsBell, BsCart3} from "react-icons/bs"
+import styles from './NavbarMain.module.css'
 
 const NavbarMain = () => {
 
-    const handleFocus = (e) => {
-        
-    }
 
 
   return (
-    <Box
-      style={{
-        border: "2px solid red",
-        height: "70px",
-        padding: "10px",
-        display: "flex",
-        justifyContent: "space-around",
-      }}
-    >
-      <Flex justify="space-between" border="1px solid black">
-          <Box boxSize="200px" border="1px solid orange" marginRight = '50px'>
+    <Box className={styles.container}>
+      <Flex justify="space-between">
+          <Box className={styles.logoHolder}>
           <Image
             src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
             alt="TripAdvisor" 
           />
           </Box>
-          <Box
-            style={{
-              border: "1px solid lightGrey",
-              padding: "20px",
-              display: "flex",
-              alignItems: "center",
-              borderRadius: "50px"
-            }}
-          >
+          <Box className={styles.searchBox}>
             <SearchIcon />
             <input
               placeholder="Enter destination"
-              style={{ fontSize: "20px", width: "300px", marginLeft: "5px" }}
-              onFocus={handleFocus}
+              className={styles.inputBox}
             />
           </Box>
       </Flex >
-      <Flex gap='2'>
-      <Button bg='white' borderRadius = '30px' leftIcon={<SlPencil/>}>Review</Button>
-      <Button bg='white' borderRadius = '30px' leftIcon={<FiHeart/>}>Trips</Button>
-      <Button bg='white' borderRadius = '30px' leftIcon={<BsBell/>}>Alerts</Button>
-      <Button borderRadius = '30px' bg="black" color="white">Sign In</Button>
-      <Button bg='white' borderRadius = '30px' leftIcon={<BsCart3/>}>Cart</Button>
-      </Flex>
+      <HStack gap='2'>
+      <Button className="ghostBtn" leftIcon={<SlPencil/>}>Review</Button>
+      <Button className="ghostBtn" leftIcon={<FiHeart/>}>Trips</Button>
+      <Button className="ghostBtn" leftIcon={<BsBell/>}>Alerts</Button>
+      <Button bg='black' color='white' borderRadius='50px' className="solidBtn">Sign In</Button>
+      <Button className="ghostBtn" leftIcon={<BsCart3/>}>Cart</Button>
+      </HStack>
     </Box>
   );
 };

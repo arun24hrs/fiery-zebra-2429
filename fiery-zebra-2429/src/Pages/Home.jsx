@@ -1,7 +1,8 @@
 import NavbarMain from '../Components/NavbarMain';
 import ButtonMenu from '../Components/ButtonMenu';
 import { Header } from '../Components/Header';
-import Carousel from '../Components/Carousel';
+import Footer from '../Components/Footer';
+import LoginPage from './LoginPage';
 
 export const Home = () => {
     return(
@@ -9,7 +10,8 @@ export const Home = () => {
             <NavbarMain/>
             <ButtonMenu/>
             <Header/>
-            <Carousel/>
+            <LoginPage/>
+            <Footer/>
         </div>
     )
 }
