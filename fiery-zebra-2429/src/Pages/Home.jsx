@@ -3,6 +3,7 @@ import ButtonMenu from '../Components/ButtonMenu';
 import { Header } from '../Components/Header';
 import Footer from '../Components/Footer';
 import LoginPage from './LoginPage';
+import Carousel from '../Components/Carousel';
 
 export const Home = () => {
     return(
@@ -10,6 +11,7 @@ export const Home = () => {
             <NavbarMain/>
             <ButtonMenu/>
             <Header/>
+            <Carousel/>
             <LoginPage/>
             <Footer/>
         </div>
