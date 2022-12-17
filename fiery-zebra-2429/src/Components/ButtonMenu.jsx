@@ -11,7 +11,7 @@ const ButtonMenu = () => {
     return(
         <Flex justify="space-between" width="90%" margin="auto">
 
-            <Button className={styles.buttonMenu}  iconSpacing="20px" rightIcon={<BiBed/>}>Hotels</Button>
+            <Button className={styles.buttonMenu} border="2px inside: #fff" iconSpacing="20px" rightIcon={<BiBed/>}>Hotels</Button>
             <Button  className={styles.buttonMenu} iconSpacing="20px" rightIcon={<BiHomeSmile/>}>Holiday Homes</Button>
             <Button  className={styles.buttonMenu} iconSpacing="20px" rightIcon={<MdOutlineEditRoad/>}>Things to Do</Button>
             <Button  className={styles.buttonMenu} iconSpacing="20px" rightIcon={<GiKnifeFork/>}>Restaurants</Button>
