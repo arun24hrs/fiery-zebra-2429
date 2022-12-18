@@ -1,4 +1,6 @@
 .container {
+  width: 90%;
+  margin: auto;
   border: 1px solid lightgrey;
   height: 60px;
   padding: 8px;
