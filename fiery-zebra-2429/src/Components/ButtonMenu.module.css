@@ -5,8 +5,23 @@
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
   } */
-  
-  .buttonMenu:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-  }
+
+.buttonMenu:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.buttonMenu {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}

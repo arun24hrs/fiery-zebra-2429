@@ -7,33 +7,31 @@ import styles from './NavbarMain.module.css'
 
 const NavbarMain = () => {
 
-
+const btnStyle ={
+  backgroundColor: "#fff",
+  color: "black",
+  borderRadius: '20px'
+}
 
   return (
-    <Box className={styles.container}>
-      <Flex justify="space-between">
+    <Flex className={styles.container}>
+      <Flex >
           <Box className={styles.logoHolder}>
           <Image
             src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
             alt="TripAdvisor" 
           />
           </Box>
-          <Box className={styles.searchBox}>
-            <SearchIcon />
-            <input
-              placeholder="Enter destination"
-              className={styles.inputBox}
-            />
-          </Box>
+          
       </Flex >
-      <HStack gap='2'>
-      <Button className="ghostBtn" leftIcon={<SlPencil/>}>Review</Button>
-      <Button className="ghostBtn" leftIcon={<FiHeart/>}>Trips</Button>
-      <Button className="ghostBtn" leftIcon={<BsBell/>}>Alerts</Button>
-      <Button bg='black' color='white' borderRadius='50px' className="solidBtn">Sign In</Button>
-      <Button className="ghostBtn" leftIcon={<BsCart3/>}>Cart</Button>
+      <HStack gap='1'>
+      <button className={styles.GhostBtn}><SlPencil/>Review</button>
+      <button className={styles.GhostBtn}><FiHeart/>Trips</button>
+      <button className={styles.GhostBtn}><BsBell/>Alerts</button>
+      <button className={styles.solidBtn}>Sign In</button>
+      <button className={styles.GhostBtn}><BsCart3/>Cart</button>
       </HStack>
-    </Box>
+    </Flex>
   );
 };
 

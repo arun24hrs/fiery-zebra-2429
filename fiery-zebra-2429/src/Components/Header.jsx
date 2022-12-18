@@ -2,7 +2,7 @@ import { background, Box, Image, position } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons"
 import styles from './Header.module.css'
 
-export const Header = () => {
+export const Header = ({handleSearchChange, handleSearchQuery}) => {
     return(
         <Box className={styles.headerContainer}>
             <Box
@@ -14,16 +14,19 @@ export const Header = () => {
               borderRadius: "50px",
               width: "780px",
               backgroundColor: "white",
-              left: "50%",
-              top: "50%",
-              transform: "translate(-50%, -50%)"
+              position:"absolute",
+              left: "20%",
+              top: "38%",
             }}
           >
             <SearchIcon />
-            <input
+            <form>
+            <input className={styles.searchBox}
               placeholder="Enter destination"
-              style={{ fontSize: "20px", width: "600px", marginLeft: "5px" }}
+              onChange={handleSearchChange}
             />
+            <button className={styles.searchBtn}>Search</button>
+            </form>
           </Box>
         </Box>
     )

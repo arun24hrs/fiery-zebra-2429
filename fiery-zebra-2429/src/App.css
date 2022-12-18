@@ -54,5 +54,25 @@
 
 
 
-/* =========== Carousel ============== */
+/* =========== Banner Home ============== */
 
+.bannerHome{
+  margin: 100px auto;
+  max-height: 200px;
+  width: 90%;
+  justify-content: space-between;
+  position: relative;
+  background-color:rgb(255, 234, 255);
+}
+
+.bannerHeading{
+  padding: 30px;
+
+}
+
+.travelChoiceBanner{
+  background: repeat-y right/75% url(https://static.tacdn.com/img2/brand/feed/tc_cards_mobile.jpeg);
+  height: 80vh;
+  background-color: rgb(0, 80, 48);
+  color: #fff;
+}
