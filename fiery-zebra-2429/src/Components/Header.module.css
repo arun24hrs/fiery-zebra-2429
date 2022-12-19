@@ -1,9 +1,25 @@
 .headerContainer{
     width:90%;
-    height: 50vh;
-    margin:auto;
+    height: 60vh;
+    margin: 50px auto;
     background-color: lightpink;
     background-image: url(https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans@2x.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.searchBox{
+    font-size: 20px;
+    width: 600px;
+    margin-left: 5px;
+    
+}
+
+.searchBtn{
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin-left: 25px;
 }

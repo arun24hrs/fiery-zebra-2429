@@ -5,3 +5,21 @@
   .slick-list{
     margin: 0px -10px;
   }
+
+.Container{
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: rgba(255, 187, 220, 0.25) 0px 30px 60px -12px inset, rgba(255, 146, 193, 0.3) 0px 18px 160px -18px inset;
+
+  padding: 30px;
+}
+
+.carouselHeading{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.carouselSubHeading{
+  padding-bottom: 10px;
+}

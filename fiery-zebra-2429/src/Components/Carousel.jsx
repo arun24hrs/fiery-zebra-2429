@@ -3,25 +3,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import CarouselCard from "./CarouselCard";
-import styles from "./Carousel.module.css"
+import Styles from "./Carousel.module.css"
 
 
 export default function Carousel({delhi}){
 
     const settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       initialSlide: 0,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
+            slidesToScroll: 4,
+            infinite: false,
             dots: false
           }
         },
@@ -50,13 +50,14 @@ export default function Carousel({delhi}){
       ]
     };
     return (
-      <div style={{width: "90%", margin: "auto", border:"1px solid red", backgroundColor:"lightPink", padding: "30px"}}>
-        <h2> Responsive </h2>
+      <div className={Styles.Container}>
+        <h2 className={Styles.carouselHeading}> You might like these </h2>
+        <p className={Styles.carouselSubHeading}>Places to stay in {delhi[0].city}</p>
         <Slider {...settings}>
           {
             delhi.map((el)=>{
                 return(
-                    <div key={el.hotel_id+el.hotel_name}>
+                    <div key={el.hotel_id+Date.now()}>
                         <CarouselCard photo1={el.photo1} name ={el.hotel_name} price={"₹"+el.rates_from+"00"} rating={el.star_rating} reviews={el.number_of_reviews}/>
                     </div>
                 )

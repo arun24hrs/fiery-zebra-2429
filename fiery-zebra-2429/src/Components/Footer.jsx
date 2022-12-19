@@ -98,7 +98,7 @@ const Footer = () => {
               icon={<MdArrowDropDown />}
             >
               {currency.map((el) => (
-                <option value={el.symbol}>
+                <option key={el.symbol} value={el.symbol}>
                   {el.symbol}
                   {"  "}
                   {el.name}
@@ -111,7 +111,7 @@ const Footer = () => {
               icon={<MdArrowDropDown />}
             >
               {currency.map((el) => (
-                <option value={el.name} >
+                <option key={el.name} value={el.name} >
                   {el.symbol}
                   {"  "}
                   {el.name}
