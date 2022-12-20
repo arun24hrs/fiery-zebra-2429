@@ -74,7 +74,7 @@ const LoginPage = () => {
             onClick={handleMailLogin}
           >
             <Icon as={GrMailOption} w={6} h={6} />
-            <Link to="/signup"><Heading as="h5" size="sm">
+            <Link to="/loginForm"><Heading as="h5" size="sm">
               Continue with Mail
             </Heading></Link>
           </Flex></button>

@@ -19,21 +19,19 @@ import {
 
 const Footer = () => {
   const currency = [
-    { name: "Indian Rupees", symbol: "₹" },
-    { name: "U.S. Dollars", symbol: "$" },
-    { name: "Chinese Yuan", symbol: "CN¥" },
-    { name: "Australian Dollars", symbol: "A$" },
-    { name: "British Pounds", symbol: "£" },
-    { name: "Euro", symbol: "€" },
-    { name: "Japanese Yen", symbol: "JP¥" },
-    { name: "Canadian Dollars", symbol: "CA$" },
-    { name: "Brazilian Real", symbol: "R$" },
-    { name: "Russian Rubles", symbol: "RUB" },
-    { name: "Swedish Krona", symbol: "SEK" },
-    { name: "Maxican Peso", symbol: "MX$" },
-    { name: "Afghan Afghanis", symbol: "AFN" },
-    { name: "Bangladeshi Taka", symbol: "BDT" },
-    { name: "Swiss Francs", symbol: "CHF" }
+    { name: "Indian Rupees", symbol: "₹", country: "India" },
+    { name: "U.S. Dollars", symbol: "$", country: "USA" },
+    { name: "Chinese Yuan", symbol: "CN¥", country: "China" },
+    { name: "Australian Dollars", symbol: "A$", country: "Australia" },
+    { name: "British Pounds", symbol: "£", country: "Great Britain" },
+    { name: "Euro", symbol: "€", country: "European Countries" },
+    { name: "Japanese Yen", symbol: "JP¥", country: "Japan" },
+    { name: "Canadian Dollars", symbol: "CA$", country: "Canada" },
+    { name: "Brazilian Real", symbol: "R$", country: "Brazil" },
+    { name: "Russian Rubles", symbol: "RUB", country: "Russia" },
+    { name: "Swedish Krona", symbol: "SEK", country: "Sweden" },
+    { name: "Maxican Peso", symbol: "MX$", country: "Mexico" },
+    { name: "Bangladeshi Taka", symbol: "BDT", country: "Bangladesh" }
   ];
 
   return (
@@ -112,9 +110,8 @@ const Footer = () => {
             >
               {currency.map((el) => (
                 <option key={el.name} value={el.name} >
-                  {el.symbol}
-                  {"  "}
-                  {el.name}
+                  {el.country}
+                  
                 </option>
               ))}
             </Select>

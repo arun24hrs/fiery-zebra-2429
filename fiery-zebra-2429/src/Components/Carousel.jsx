@@ -8,6 +8,21 @@ import Styles from "./Carousel.module.css"
 
 export default function Carousel({delhi}){
 
+  const styles = {
+    
+".slick-prev:before": {
+  "content": "<",
+  "color": "red",
+  "font-size": "30px",
+},
+
+".slick-next:before": {
+  "content": ">",
+  "color": "red",
+  "font-size": "30px"
+}
+  }
+
     const settings = {
       dots: false,
       infinite: false,

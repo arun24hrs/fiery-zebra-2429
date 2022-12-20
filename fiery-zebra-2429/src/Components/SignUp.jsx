@@ -6,20 +6,56 @@ import {
   Text,
   Box,
   FormControl,
-  FormLabel,Input, Button
+  FormLabel,
+  Input,
+  Button,
+  Alert,AlertTitle,AlertIcon,AlertDescription
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Link as Route } from "react-router-dom";
+import React from "react";
 
 const LoginPage = () => {
+
+  const [create, setCreate] = React.useState(false);
+
   const styles = {
     position: "absolute",
     left: "10%",
   };
 
   const handleSignup = () => {
-    console.log("helkdsjf");
+    setCreate(true);
   };
+
+  if(create){
+    return(
+      <Alert
+      status="success"
+      variant="subtle"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      textAlign="center"
+      height="200px"
+    >
+      <Route to="/">
+          <button style={styles}>
+            <ArrowBackIcon /> Back to Home
+          </button>
+        </Route>
+      <AlertIcon boxSize="40px" mr={0} />
+      <AlertTitle mt={4} mb={1} fontSize="lg">
+        Application submitted!
+      </AlertTitle>
+      <AlertDescription maxWidth="sm">
+        Thanks for submitting your application. Your account has been created.
+      </AlertDescription>
+
+      
+    </Alert>
+    )
+  }
 
   return (
     <Box>
@@ -48,23 +84,25 @@ const LoginPage = () => {
         <FormControl isRequired>
           <FormLabel>First name</FormLabel>
           <Input placeholder="First name" />
-          <br/>
-          <br/>
+          <br />
+          <br />
           <FormLabel>Last name</FormLabel>
           <Input placeholder="Last name" />
-          <br/>
-          <br/>
+          <br />
+          <br />
           <FormLabel>Email</FormLabel>
           <Input type="email" placeholder="Email Address" />
-          <br/>
-          <br/>
+          <br />
+          <br />
           <FormLabel>Password</FormLabel>
           <Input type="password" placeholder="Create Password" />
-          <br/>
-          <br/>
-          <br/>
-          <Button colorScheme='teal' width="100%" onClick={handleSignup}>SUBMIT</Button>
-          <br/>
+          <br />
+          <br />
+          <br />
+          <Button colorScheme="teal" width="100%" onClick={handleSignup}>
+            Create Account
+          </Button>
+          <br />
         </FormControl>
 
         <VStack width="450px">
