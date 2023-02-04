@@ -13,8 +13,16 @@ Project link: https://glowing-axolotl-dc73f2.netlify.app/
 - Chakra UI
 - CSS
 
+---
+
 # What you will be able to do?
 Users will be able to plan and schedule their trips and book hotels and reserve a table in restaurants.
+
+---
+
+# Sugestions of Hotels in Mumbai
+
+<img src="https://github.com/arun24hrs/fiery-zebra-2429/blob/main/fiery-zebra-2429/public/carousel.png" alt="carousel"/>
 
 # Features
 - Search Hotels, Restuarants, Holiday Homes, etc.
