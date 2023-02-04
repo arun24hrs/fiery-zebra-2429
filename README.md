@@ -3,6 +3,11 @@ This is a project on TripAdvisor.in
 
 Project link: https://glowing-axolotl-dc73f2.netlify.app/
 
+---
+# First Look
+
+<img
+
 # Tech-Stack
 - React JS
 - Chakra UI
